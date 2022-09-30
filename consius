@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+
+// session_start();
+
+define('ROOT', __DIR__);
+
+require_once ROOT . "/vendor/autoload.php";
+
+$app = require_once ROOT . '/bootstrap/console.php';
+
+exit();
