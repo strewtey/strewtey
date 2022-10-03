@@ -10,11 +10,11 @@
 			<title><?= response('public:web')['welcome']['title']; ?></title>
 
 			<!-- ICON -->
-			<link href="<?php $a = route('external-url', ['url' => cdn('icon/svg-modify/icons8_send_to_back.svg')]); echo $a ? $a : cdn('icon/svg-modify/icons8_send_to_back.svg') ?>" rel="icon" type="image/svg">
+			<link href="<?= cdn('icon/svg-modify/icons8_send_to_back.svg'); ?>" rel="icon" type="image/svg">
 
 			<!-- STYLESHEET -->
 			<link rel="stylesheet" type="text/css" href="<?= assets('css/excepts/public/web/welcome.css'); ?>">
-			<link rel="stylesheet" type="text/css" href="<?php $a = route('external-url', ['url' => cdn('css/font.min.css')]); echo $a ? $a : cdn('css/font.min.css'); ?>">
+			<link rel="stylesheet" type="text/css" href="<?= cdn('css/font.min.css'); ?>">
 		</head>
 		<body class="w-full-29u2 h-full-ej2 overflow-hidden-w19" style="z-index: 10;">
 			<div class="back w-full-29u2 h-full-ej2 overflow-hidden-w19" style="position: fixed;">
