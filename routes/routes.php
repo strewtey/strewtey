@@ -1,9 +1,12 @@
 <?php
 use Scraps\Request\Request /*as Co_Req*/;
 
-// Route::error(404, function(){
-// 	redirect('404', [], false);
-// });
+Route::error(404, function(){
+	view('layouts.web.errorcode', ['datas' => [
+		'code' => '404',
+		'message' => response('routes:404')
+	]]);
+});
 // Route::domain(['routes.api', 'www.routes.api'])->group(function(){
 // 	Route::get('/', 'App\Controllers\Api@index');
 // 	Route::get('/lol', 'App\Controllers\Api@index');
@@ -34,6 +37,6 @@ use Scraps\Request\Request /*as Co_Req*/;
 	// Route::get('/welcome/{lorem}', function(Request|int $req = null, $lorem = null){
 	// 	var_dump($req);
 	// });
-Route::get('/welcome', function(){
-	View::render('welcome');
+Route::get('/', function(){
+	view('pages.public.web.welcome');
 });
