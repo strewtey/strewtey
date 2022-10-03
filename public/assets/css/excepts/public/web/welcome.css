@@ -74,14 +74,6 @@ img, video { max-width: 100%; height: auto; }
 }
 .link-w29{ display: inline-block; }
 .link-w29 > div > :not([hidden]) ~ :not([hidden]){ margin-left: 0.5rem; } 
-@media (min-width: 768px) { /* MD */
-	.main-w2181 > div{
-		width: 50%;
-	}
-	.page-title-eu92{
-		font-size: 3rem; line-height: 1;
-	}
-}
 @media (min-width: 640px) { /* SM */
 	.main-w2181 > div{
 		width: 66.666667%;
@@ -91,6 +83,14 @@ img, video { max-width: 100%; height: auto; }
 		font-size: 2.25rem; line-height: 2.5rem;
 	}
 	.link-w29{ margin-left: 2rem; }
+}
+@media (min-width: 768px) { /* MD */
+	.main-w2181 > div{
+		width: 50%;
+	}
+	.page-title-eu92{
+		font-size: 3rem; line-height: 1;
+	}
 }
 
 
