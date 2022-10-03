@@ -8,7 +8,7 @@ $app->make([
 	Scraps\Collects\Collect::class,
 	[Scraps\Component\Component::class, 'method' => 'init'],
 	[Scraps\Provider\Provider::class, 'method' => 'init'],
-	[Scraps\Helper\Helper::class, 'method' => 'load', 'args' => ['file' => ROOT . '\vendor\strew\framework\src\Scraps\View\helpers.php'], 'callback' => function($res){
+	[Scraps\Helper\Helper::class, 'method' => 'load', 'args' => ['file' => ROOT . '\vendor\strewtey\framework\src\Scraps\View\helpers.php'], 'callback' => function($res){
 		if(!Scraps\View\View::$helper){ Scraps\View\View::$helper = true; }
 	}],
 	[Route::class, 'method' => 'run'],
